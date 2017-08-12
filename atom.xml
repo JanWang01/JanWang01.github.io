@@ -45,13 +45,13 @@
       <category term="github" scheme="https://janwang01.github.io/categories/hexo/%E5%8D%9A%E5%AE%A2/github/"/>
     
     
-      <category term="我在微博" scheme="https://janwang01.github.io/tags/%E6%88%91%E5%9C%A8%E5%BE%AE%E5%8D%9A/"/>
-    
       <category term="做自己喜欢的" scheme="https://janwang01.github.io/tags/%E5%81%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AC%A2%E7%9A%84/"/>
     
       <category term="性能" scheme="https://janwang01.github.io/tags/%E6%80%A7%E8%83%BD/"/>
     
       <category term="总结" scheme="https://janwang01.github.io/tags/%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="我在微博" scheme="https://janwang01.github.io/tags/%E6%88%91%E5%9C%A8%E5%BE%AE%E5%8D%9A/"/>
     
       <category term="我的第一片新天空" scheme="https://janwang01.github.io/tags/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%89%87%E6%96%B0%E5%A4%A9%E7%A9%BA/"/>
     
@@ -108,11 +108,19 @@
       <category term="hexo" scheme="https://janwang01.github.io/categories/hexo/"/>
     
     
+      <category term="做自己喜欢的" scheme="https://janwang01.github.io/tags/%E5%81%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AC%A2%E7%9A%84/"/>
+    
+      <category term="性能" scheme="https://janwang01.github.io/tags/%E6%80%A7%E8%83%BD/"/>
+    
+      <category term="总结" scheme="https://janwang01.github.io/tags/%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="我在微博" scheme="https://janwang01.github.io/tags/%E6%88%91%E5%9C%A8%E5%BE%AE%E5%8D%9A/"/>
+    
+      <category term="我的第一片新天空" scheme="https://janwang01.github.io/tags/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%89%87%E6%96%B0%E5%A4%A9%E7%A9%BA/"/>
+    
       <category term="android" scheme="https://janwang01.github.io/tags/android/"/>
     
       <category term="php" scheme="https://janwang01.github.io/tags/php/"/>
-    
-      <category term="我在微博" scheme="https://janwang01.github.io/tags/%E6%88%91%E5%9C%A8%E5%BE%AE%E5%8D%9A/"/>
     
       <category term="数据库" scheme="https://janwang01.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
@@ -137,14 +145,6 @@
       <category term="一年" scheme="https://janwang01.github.io/tags/%E4%B8%80%E5%B9%B4/"/>
     
       <category term="个人域名独立博客" scheme="https://janwang01.github.io/tags/%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D%E7%8B%AC%E7%AB%8B%E5%8D%9A%E5%AE%A2/"/>
-    
-      <category term="做自己喜欢的" scheme="https://janwang01.github.io/tags/%E5%81%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AC%A2%E7%9A%84/"/>
-    
-      <category term="性能" scheme="https://janwang01.github.io/tags/%E6%80%A7%E8%83%BD/"/>
-    
-      <category term="总结" scheme="https://janwang01.github.io/tags/%E6%80%BB%E7%BB%93/"/>
-    
-      <category term="我的第一片新天空" scheme="https://janwang01.github.io/tags/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%89%87%E6%96%B0%E5%A4%A9%E7%A9%BA/"/>
     
       <category term="生活" scheme="https://janwang01.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
@@ -192,11 +192,11 @@
       <category term="hexo" scheme="https://janwang01.github.io/categories/hexo/"/>
     
     
+      <category term="我在微博" scheme="https://janwang01.github.io/tags/%E6%88%91%E5%9C%A8%E5%BE%AE%E5%8D%9A/"/>
+    
       <category term="android" scheme="https://janwang01.github.io/tags/android/"/>
     
       <category term="php" scheme="https://janwang01.github.io/tags/php/"/>
-    
-      <category term="我在微博" scheme="https://janwang01.github.io/tags/%E6%88%91%E5%9C%A8%E5%BE%AE%E5%8D%9A/"/>
     
       <category term="数据库" scheme="https://janwang01.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
