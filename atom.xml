@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://janwang01.github.io/"/>
-  <updated>2017-08-12T15:57:23.847Z</updated>
+  <updated>2017-08-15T17:12:30.159Z</updated>
   <id>https://janwang01.github.io/</id>
   
   <author>
@@ -16,202 +16,79 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>ceshi</title>
-    <link href="https://janwang01.github.io/2017/08/03/ceshi/"/>
-    <id>https://janwang01.github.io/2017/08/03/ceshi/</id>
-    <published>2017-08-03T08:37:50.000Z</published>
-    <updated>2017-08-12T15:57:23.847Z</updated>
+    <title>记录一些常用的代码</title>
+    <link href="https://janwang01.github.io/2017/08/16/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E4%BB%A3%E7%A0%81/"/>
+    <id>https://janwang01.github.io/2017/08/16/记录一些常用的代码/</id>
+    <published>2017-08-15T16:57:35.000Z</published>
+    <updated>2017-08-15T17:12:30.159Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="南宁好戳热"><a href="#南宁好戳热" class="headerlink" title="南宁好戳热"></a>南宁好戳热</h3><h2 id="我他妈要变烤焦了"><a href="#我他妈要变烤焦了" class="headerlink" title="我他妈要变烤焦了"></a><strong>我他</strong>妈要变烤焦了</h2><blockquote>
-<p>ssladkfjlaskdjflasdf</p>
-<p>ssladkfjlaskdjflasdf</p>
+    <content type="html"><![CDATA[<p>很多时候对一些比较常用，但是又不是经常用的并且又很长的代码，习惯性想不起来，每次都要问度娘，表示特别麻烦，而已不是第一页第一条就有自己要的代码，经常要翻好几个链接才能找到答案。既浪费时间，又容易打断码代码的思路。故此特下此博客记录下一些常用代码。<br><a id="more"></a></p>
+<h1 id="常用css"><a href="#常用css" class="headerlink" title="常用css"></a>常用css</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">// 快速滚动和回弹的效果(仅支持IOS)</div><div class="line">-webkit-overflow-scrolling : touch;</div></pre></td></tr></table></figure>
+<h1 id="常用js"><a href="#常用js" class="headerlink" title="常用js"></a>常用js</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">// 跳转页面（有些华为手机链接没变化是不会跳转当前页面的，必须要加个时间戳或其他参数）</div><div class="line">window.location.href=<span class="string">""</span>; </div><div class="line">// 返回上一页</div><div class="line">window.history.back(-1); </div><div class="line">// 刷新当前页面</div><div class="line">location.reload();</div></pre></td></tr></table></figure>
+<h1 id="常用php"><a href="#常用php" class="headerlink" title="常用php"></a>常用php</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$act_id</span> = intval(Request::input(<span class="string">'act_id'</span>));</div><div class="line">Session::put(<span class="string">'jssdk'</span>,<span class="variable">$jssdk</span>);</div></pre></td></tr></table></figure>
+<h1 id="常用sql"><a href="#常用sql" class="headerlink" title="常用sql"></a>常用sql</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">SELECT zixun_order.mem_name,zixun_order.mem_tel,zixun_ticket.price,zixun_ticket.ticktype_name,zixun_ticket.act_name,zixun_ticket.created_at,zixun_ticket.pay_status FROM zixun_ticket LEFT JOIN zixun_order ON zixun_ticket.mem_id = zixun_order.mem_id WHERE zixun_ticket.act_id = 4 AND zixun_ticket.pay_status = 1;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;很多时候对一些比较常用，但是又不是经常用的并且又很长的代码，习惯性想不起来，每次都要问度娘，表示特别麻烦，而已不是第一页第一条就有自己要的代码，经常要翻好几个链接才能找到答案。既浪费时间，又容易打断码代码的思路。故此特下此博客记录下一些常用代码。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="代码" scheme="https://janwang01.github.io/categories/%E4%BB%A3%E7%A0%81/"/>
+    
+      <category term="js" scheme="https://janwang01.github.io/categories/%E4%BB%A3%E7%A0%81/js/"/>
+    
+      <category term="css" scheme="https://janwang01.github.io/categories/%E4%BB%A3%E7%A0%81/js/css/"/>
+    
+      <category term="php" scheme="https://janwang01.github.io/categories/%E4%BB%A3%E7%A0%81/js/css/php/"/>
+    
+      <category term="sql" scheme="https://janwang01.github.io/categories/%E4%BB%A3%E7%A0%81/js/css/php/sql/"/>
+    
+    
+      <category term="js" scheme="https://janwang01.github.io/tags/js/"/>
+    
+      <category term="css" scheme="https://janwang01.github.io/tags/css/"/>
+    
+      <category term="php" scheme="https://janwang01.github.io/tags/php/"/>
+    
+      <category term="sql" scheme="https://janwang01.github.io/tags/sql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>那些年npm安装包遇到的坑</title>
+    <link href="https://janwang01.github.io/2017/08/16/%E9%82%A3%E4%BA%9B%E5%B9%B4npm%E5%AE%89%E8%A3%85%E5%8C%85%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/"/>
+    <id>https://janwang01.github.io/2017/08/16/那些年npm安装包遇到的坑/</id>
+    <published>2017-08-15T16:11:43.000Z</published>
+    <updated>2017-08-15T16:55:30.410Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="nodejs安装与配置"><a href="#nodejs安装与配置" class="headerlink" title="nodejs安装与配置"></a>nodejs安装与配置</h1><p>全程参照网上教程，<a href="http://www.jianshu.com/p/03a76b2e7e00" target="_blank" rel="external">传送门</a>！这篇教程是把nodejs安装在D盘，当时我并没有多想为什么要装在D盘。因为我电脑是固态硬盘并没有分区只有一个盘，所以我就干脆把它装在了<strong>C:\Program Files (x86)</strong>。到后面npm install 的时候出错了，权限不够。所以每次都要以管理员权限运行，比较麻烦。如果装在D盘的话，就可以直接运行了。我当时也觉得不麻烦，但是后来用Git bash here来安装hexo的时候并不是以管理员权限运行，所以一直安装不了，又不能使用管理员权限运行。后面又重新安装在了D盘才解决问题。<br><a id="more"></a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Jan@MiWiFi-R1CL MINGW64 /c/JanBlog</div><div class="line">$ npm install hexo -g</div></pre></td></tr></table></figure></p>
+<p>虽然解决了这个小坑，但是又有个大坑等着我了。npm安装依赖超慢，装了一个下午都没装的hexo。上网百度了一下，大家都说用淘宝镜像源cnpm速度非常快。但是的话有时候会有莫名其妙的问题出现，所以当时没有马上用cnmp来安装，又继续寻找，可是都没有其他的好办法。当时还以为是npm版本太高，不稳定，然后立马又换了个稳定版的，并没有什么卵用。难道是vpn不给力，于是乎又换了个vpn，然而还是没什么卵用。折腾了一天，都没弄完。无奈之下，使用了<a href="https://npm.taobao.org/" target="_blank" rel="external">cnpm</a>，速度贼快！</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g cnpm --registry=https://registry.npm.taobao.org</div></pre></td></tr></table></figure>
+<h1 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h1><p>两个不同的电脑上传hexo博客到github老是报错，找了很久终于发现<a href="http://blog.csdn.net/gdutxiaoxu/article/details/53573399" target="_blank" rel="external">解决方案</a>。</p>
+<p><strong>注意：</strong>git每次根据邮箱自动生成的密钥都是不一样的，所以每次都要上传的github账号上面才能实现，hexo g 直接提交到版本库。</p>
+<h1 id="新版npm使用方式，速度更快，更稳定"><a href="#新版npm使用方式，速度更快，更稳定" class="headerlink" title="新版npm使用方式，速度更快，更稳定"></a>新版npm使用方式，速度更快，更稳定</h1><p><a href="https://www.zhihu.com/question/53341824" target="_blank" rel="external">通过cnpm下载的包为什么那么凌乱</a></p>
+<p><a href="http://blog.csdn.net/rongbo_j/article/details/52106580" target="_blank" rel="external">使用阿里巴巴国内镜像但不使用cnpm</a></p>
 <blockquote>
-<p>alfksdjf</p>
+<p>cnpm 在安装包时使用的是 cnpm/npminstall 。项目的 readme 已经写明了细节，仔细阅读即可。简单来说，npminstall 下的 node_modules 目录采用和 npm 官方 client 不一样的布局，主要是为了最大限度提高安装速度。</p>
 </blockquote>
-</blockquote>
-<pre><code>    $activity = Activity::with([
-    &apos;activitySupplements&apos; =&gt; function($query){
-        $query-&gt;where(&apos;isdelete&apos;,0);
-    },
-    &apos;activityCategorys&apos; =&gt; function($query){
-        $query-&gt;where(&apos;isdelete&apos;,0);
-    },
-    &apos;ticketTypes&apos; =&gt; function($query){
-        $query-&gt;where(&apos;isdelete&apos;,0);
-    },
-    ])-&gt;where(&apos;isdelete&apos;,0)-&gt;where(&apos;id&apos;,$act_id)-&gt;first();
-if(empty($activity)){
-    return Util::msg(500,&apos;该活动不存在&apos;);
-}
-</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;南宁好戳热&quot;&gt;&lt;a href=&quot;#南宁好戳热&quot; class=&quot;headerlink&quot; title=&quot;南宁好戳热&quot;&gt;&lt;/a&gt;南宁好戳热&lt;/h3&gt;&lt;h2 id=&quot;我他妈要变烤焦了&quot;&gt;&lt;a href=&quot;#我他妈要变烤焦了&quot; class=&quot;headerlink&quot; titl
-    
-    </summary>
-    
-      <category term="hexo" scheme="https://janwang01.github.io/categories/hexo/"/>
-    
-      <category term="博客" scheme="https://janwang01.github.io/categories/hexo/%E5%8D%9A%E5%AE%A2/"/>
-    
-      <category term="github" scheme="https://janwang01.github.io/categories/hexo/%E5%8D%9A%E5%AE%A2/github/"/>
-    
-    
-      <category term="做自己喜欢的" scheme="https://janwang01.github.io/tags/%E5%81%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AC%A2%E7%9A%84/"/>
-    
-      <category term="性能" scheme="https://janwang01.github.io/tags/%E6%80%A7%E8%83%BD/"/>
-    
-      <category term="总结" scheme="https://janwang01.github.io/tags/%E6%80%BB%E7%BB%93/"/>
-    
-      <category term="我在微博" scheme="https://janwang01.github.io/tags/%E6%88%91%E5%9C%A8%E5%BE%AE%E5%8D%9A/"/>
-    
-      <category term="我的第一片新天空" scheme="https://janwang01.github.io/tags/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%89%87%E6%96%B0%E5%A4%A9%E7%A9%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>测试功能</title>
-    <link href="https://janwang01.github.io/2017/08/02/%E6%B5%8B%E8%AF%95%E5%8A%9F%E8%83%BD/"/>
-    <id>https://janwang01.github.io/2017/08/02/测试功能/</id>
-    <published>2017-08-02T14:15:52.000Z</published>
-    <updated>2017-08-02T14:16:46.301Z</updated>
-    
-    <content type="html"><![CDATA[<ol>
-<li>调整思维模式</li>
-</ol>
-<p>​    重点，慢慢来，主要是下面这几点：</p>
-<p>1.1 专注于自身的局部最优解，与他人比较只是为了更客观地衡量自身水平以便查漏补缺，而不是为了竞争</p>
-<p>1.2 抓住核心需求和主要矛盾，不要总想着事事尽善尽美，人的时间精力有限，过分陷于细节只会让自己迷失方向</p>
-<p>1.3 明确主要矛盾之后，凡是对自己成长有利，对他人无害的事情放手去干，不要瞻前顾后，拒绝道德绑架</p>
-<p>1.4 对自己有客观稳定的认识和评价，不因他人的批评或表扬产生过多的自我否定或自我膨胀。学着看到自己的进步，学着接受自己的不足，学着避免情绪内耗</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ npm install &lt;registry-name&gt; --registry https://registry.npmjs.org</div><div class="line">$ npm config <span class="built_in">set</span> registry https://registry.npmjs.org  </div><div class="line">$ npm config list <span class="comment">#查看更新后的config设置</span></div></pre></td></tr></table></figure>
 ]]></content>
     
     <summary type="html">
     
-      &lt;ol&gt;
-&lt;li&gt;调整思维模式&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;​    重点，慢慢来，主要是下面这几点：&lt;/p&gt;
-&lt;p&gt;1.1 专注于自身的局部最优解，与他人比较只是为了更客观地衡量自身水平以便查漏补缺，而不是为了竞争&lt;/p&gt;
-&lt;p&gt;1.2 抓住核心需求和主要矛盾，不要总想着事事尽
+      &lt;h1 id=&quot;nodejs安装与配置&quot;&gt;&lt;a href=&quot;#nodejs安装与配置&quot; class=&quot;headerlink&quot; title=&quot;nodejs安装与配置&quot;&gt;&lt;/a&gt;nodejs安装与配置&lt;/h1&gt;&lt;p&gt;全程参照网上教程，&lt;a href=&quot;http://www.jianshu.com/p/03a76b2e7e00&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;传送门&lt;/a&gt;！这篇教程是把nodejs安装在D盘，当时我并没有多想为什么要装在D盘。因为我电脑是固态硬盘并没有分区只有一个盘，所以我就干脆把它装在了&lt;strong&gt;C:\Program Files (x86)&lt;/strong&gt;。到后面npm install 的时候出错了，权限不够。所以每次都要以管理员权限运行，比较麻烦。如果装在D盘的话，就可以直接运行了。我当时也觉得不麻烦，但是后来用Git bash here来安装hexo的时候并不是以管理员权限运行，所以一直安装不了，又不能使用管理员权限运行。后面又重新安装在了D盘才解决问题。&lt;br&gt;
     
     </summary>
     
+      <category term="npm" scheme="https://janwang01.github.io/categories/npm/"/>
     
-  </entry>
-  
-  <entry>
-    <title>快速搭建github-hexo个性博客</title>
-    <link href="https://janwang01.github.io/2017/08/02/%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BAgithub-hexo%E4%B8%AA%E6%80%A7%E5%8D%9A%E5%AE%A2/"/>
-    <id>https://janwang01.github.io/2017/08/02/快速搭建github-hexo个性博客/</id>
-    <published>2017-08-02T10:59:22.000Z</published>
-    <updated>2017-08-02T12:13:42.377Z</updated>
-    
-    <content type="html"><![CDATA[<p>###快速搭建github-hexo个性博客<br>hexo</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;###快速搭建github-hexo个性博客&lt;br&gt;hexo&lt;/p&gt;
-
-    
-    </summary>
-    
-      <category term="hexo" scheme="https://janwang01.github.io/categories/hexo/"/>
+      <category term="nodejs" scheme="https://janwang01.github.io/categories/npm/nodejs/"/>
     
     
-      <category term="android" scheme="https://janwang01.github.io/tags/android/"/>
+      <category term="npm" scheme="https://janwang01.github.io/tags/npm/"/>
     
-      <category term="做自己喜欢的" scheme="https://janwang01.github.io/tags/%E5%81%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AC%A2%E7%9A%84/"/>
-    
-      <category term="性能" scheme="https://janwang01.github.io/tags/%E6%80%A7%E8%83%BD/"/>
-    
-      <category term="总结" scheme="https://janwang01.github.io/tags/%E6%80%BB%E7%BB%93/"/>
-    
-      <category term="我在微博" scheme="https://janwang01.github.io/tags/%E6%88%91%E5%9C%A8%E5%BE%AE%E5%8D%9A/"/>
-    
-      <category term="我的第一片新天空" scheme="https://janwang01.github.io/tags/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%89%87%E6%96%B0%E5%A4%A9%E7%A9%BA/"/>
-    
-      <category term="php" scheme="https://janwang01.github.io/tags/php/"/>
-    
-      <category term="数据库" scheme="https://janwang01.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-      <category term="hexo" scheme="https://janwang01.github.io/tags/hexo/"/>
-    
-      <category term="博客" scheme="https://janwang01.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-      <category term="github" scheme="https://janwang01.github.io/tags/github/"/>
-    
-      <category term="10小时轻松搞定" scheme="https://janwang01.github.io/tags/10%E5%B0%8F%E6%97%B6%E8%BD%BB%E6%9D%BE%E6%90%9E%E5%AE%9A/"/>
-    
-      <category term="NoSQL" scheme="https://janwang01.github.io/tags/NoSQL/"/>
-    
-      <category term="PHP" scheme="https://janwang01.github.io/tags/PHP/"/>
-    
-      <category term="Redis" scheme="https://janwang01.github.io/tags/Redis/"/>
-    
-      <category term="next" scheme="https://janwang01.github.io/tags/next/"/>
-    
-      <category term="zepto" scheme="https://janwang01.github.io/tags/zepto/"/>
-    
-      <category term="一年" scheme="https://janwang01.github.io/tags/%E4%B8%80%E5%B9%B4/"/>
-    
-      <category term="个人域名独立博客" scheme="https://janwang01.github.io/tags/%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D%E7%8B%AC%E7%AB%8B%E5%8D%9A%E5%AE%A2/"/>
-    
-      <category term="生活" scheme="https://janwang01.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>This my first blog</title>
-    <link href="https://janwang01.github.io/2017/08/01/This-my-first-blog/"/>
-    <id>https://janwang01.github.io/2017/08/01/This-my-first-blog/</id>
-    <published>2017-08-01T09:56:49.000Z</published>
-    <updated>2017-08-02T12:15:55.787Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="hexo" scheme="https://janwang01.github.io/categories/hexo/"/>
-    
-    
-      <category term="android" scheme="https://janwang01.github.io/tags/android/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://janwang01.github.io/2017/08/01/hello-world/"/>
-    <id>https://janwang01.github.io/2017/08/01/hello-world/</id>
-    <published>2017-08-01T09:40:49.000Z</published>
-    <updated>2017-08-02T12:16:27.991Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello world!"></a>Hello world!</h1><blockquote>
-<p>asdf</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"> * [sendTemplateMsg]</div><div class="line"> * @return [type] [发送模板消息]</div><div class="line"> */</div><div class="line">public function sendTemplateMsg()&#123;</div><div class="line">    $title = trim(Request::input(&apos;title&apos;));</div><div class="line">    $task1 = trim(Request::input(&apos;task1&apos;));</div><div class="line">    $task2 = trim(Request::input(&apos;task2&apos;));</div><div class="line">    $remark = trim(Request::input(&apos;remark&apos;));</div><div class="line">    // if (empty($title) || empty($task1) || empty($task2) || empty($remark)) &#123;</div><div class="line">    //     return Util::msg(500, &apos;&apos;);</div><div class="line">    // &#125;</div><div class="line">    // $memberTemp = [&apos;oLLnZspTBzYOvZywhdNihPTsQ9NM&apos;,&apos;oLLnZsgmd69UXiWx2ggOBDCUwyiI&apos;,&apos;oLLnZsol8IwM-94n6_aG18I60Wi4&apos;];</div><div class="line">    // $templateid = &apos;pvNzn0yBZIBWnF1gQ2k49hnr3fy5Jq6d4LXqEL9oSSg&apos;;</div><div class="line">    // $url = &apos;http://oppo.afxeon.net/millionbonus/month&apos;;</div><div class="line">    // for ($i=0; $i &lt; 10 ; $i++) &#123; </div><div class="line">    //     $rand = rand(1,3);</div><div class="line">    //     $data = array(</div><div class="line">    //        &quot;first&quot;    =&gt; &apos;测试&apos;,</div><div class="line">    //        &quot;keyword1&quot; =&gt; &apos;测试&apos;,</div><div class="line">    //        &quot;keyword2&quot; =&gt; &apos;测试&apos;,</div><div class="line">    //        &quot;remark&quot;   =&gt; &apos;测试&apos;,</div><div class="line">    //         );</div><div class="line">    //     $openid = $memberTemp[$rand-1];</div><div class="line">    //     Event::fire(new TemplateEvent($templateid,$data,$openid,$url));</div><div class="line">    // &#125;</div><div class="line">    // dd(&apos;ff&apos;);</div><div class="line">    $skip = intval(Request::input(&apos;skip&apos;));</div><div class="line">    $member = Member::where(&apos;openid&apos;,&apos;!=&apos;,&apos;&apos;)-&gt;skip($skip)-&gt;take(250)-&gt;pluck(&apos;openid&apos;);</div><div class="line">    $templateid = &apos;pvNzn0yBZIBWnF1gQ2k49hnr3fy5Jq6d4LXqEL9oSSg&apos;;</div><div class="line">    $url = &apos;http://oppo.afxeon.net/millionbonus/month&apos;;</div><div class="line">    $index = 0;</div><div class="line">    foreach ($member as $key =&gt; $value) &#123;</div><div class="line">        // 发送模板消息</div><div class="line">        $data = array(</div><div class="line">               &quot;first&quot;    =&gt; &apos;卡牌合成即将开启&apos;,//$title,</div><div class="line">               &quot;keyword1&quot; =&gt; &apos;所有卡牌合成将于12日16点准时开启，限时2小时，合成后直接可以抽奖&apos;,//$task1,</div><div class="line">               &quot;keyword2&quot; =&gt; &apos;2小时后卡牌清零，重新计算&apos;,//$task2,</div><div class="line">               &quot;remark&quot;   =&gt; &apos;抽奖人员抽奖后务必截图保存，发送给区域用户运营专员&apos;,//$remark,</div><div class="line">              );</div><div class="line">        Event::fire(new TemplateEvent($templateid,$data,$value,$url));</div><div class="line">        $index = $index+1;</div><div class="line">    &#125;</div><div class="line">    return Util::msg(200, &apos;模板消息发送成功&apos;,$index);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Hello-world&quot;&gt;&lt;a href=&quot;#Hello-world&quot; class=&quot;headerlink&quot; title=&quot;Hello world!&quot;&gt;&lt;/a&gt;Hello world!&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;asdf&lt;/p&gt;
-&lt;/blockquo
-    
-    </summary>
-    
-      <category term="hexo" scheme="https://janwang01.github.io/categories/hexo/"/>
-    
-    
-      <category term="android" scheme="https://janwang01.github.io/tags/android/"/>
-    
-      <category term="我在微博" scheme="https://janwang01.github.io/tags/%E6%88%91%E5%9C%A8%E5%BE%AE%E5%8D%9A/"/>
-    
-      <category term="php" scheme="https://janwang01.github.io/tags/php/"/>
-    
-      <category term="数据库" scheme="https://janwang01.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="坑" scheme="https://janwang01.github.io/tags/%E5%9D%91/"/>
     
   </entry>
   
