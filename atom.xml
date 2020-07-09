@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://janwang01.github.io/"/>
-  <updated>2019-12-24T06:57:18.057Z</updated>
+  <updated>2020-07-09T08:33:21.393Z</updated>
   <id>https://janwang01.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>解决mac版npm全局安装模块后命令不起作用</title>
+    <link href="https://janwang01.github.io/2020/07/09/mac%E4%BD%BF%E7%94%A8npm%E5%85%A8%E5%B1%80%E5%AE%89%E8%A3%85%E5%90%8E%E4%BB%8D%E7%84%B6%E6%8F%90%E7%A4%BA%E6%89%BE%E4%B8%8D%E5%88%B0%E5%91%BD%E4%BB%A4/"/>
+    <id>https://janwang01.github.io/2020/07/09/mac使用npm全局安装后仍然提示找不到命令/</id>
+    <published>2020-07-09T07:40:04.000Z</published>
+    <updated>2020-07-09T08:33:21.393Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>解决问题时一旦心态崩了，要马上转移注意力休息，不然根本解决不了问题反而会更急躁。<br> <b>Jan</b></p></blockquote><h2 id="问题重现"><a href="#问题重现" class="headerlink" title="问题重现"></a>问题重现</h2><p>正常使用命令安装hexo</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo</span><br></pre></td></tr></table></figure><a id="more"></a><p>bash提示安装成功</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/Users/wangjian/bin/bin/vue -&gt; /Users/wangjian/bin/lib/node_modules/vue-cli/bin/vue</span><br><span class="line">+ vue-cli@2.9.6</span><br><span class="line">added 238 packages from 205 contributors in 9.519s</span><br></pre></td></tr></table></figure><p>然后执行命令运行hexo，讲道理应该是可以正常运行了，但是系统提示：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">bash: hexo: command not found</span><br></pre></td></tr></table></figure><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>在百度找了好久没都找到解决方法，好像遇到这个问题的很少。最后在我的不懈努力下终于找到解决办法了</p><p>在用户根目录（<code>/Users/wangjian/</code>）下，找到<code>.bash_profile</code>隐藏文件，没有就新建，有就直接修改，添加进去一个路径。</p><p>注意这个路径是从上面安装成功后提示复制下来的，每个人的不一样，总之从安装成功的提示里，复制到/bin/结束就可以了。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ vi ~/.bash_profile</span><br><span class="line">export PATH=$PATH:/Users/wangjian/bin/bin/:$PATH</span><br></pre></td></tr></table></figure><p>更新配置文件到环境变量</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ source /Users/majialun/.bash_profile</span><br></pre></td></tr></table></figure><p>测试下命令有没有生效                        </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure><p>命令执行成功，问题解决。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;解决问题时一旦心态崩了，要马上转移注意力休息，不然根本解决不了问题反而会更急躁。&lt;br&gt; &lt;b&gt;Jan&lt;/b&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;问题重现&quot;&gt;&lt;a href=&quot;#问题重现&quot; class=&quot;headerlink&quot; title=&quot;问题重现&quot;&gt;&lt;/a&gt;问题重现&lt;/h2&gt;&lt;p&gt;正常使用命令安装hexo&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm install -g hexo&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="npm" scheme="https://janwang01.github.io/categories/npm/"/>
+    
+    
+      <category term="npm" scheme="https://janwang01.github.io/tags/npm/"/>
+    
+  </entry>
+  
+  <entry>
     <title>github+hexo免费搭建个性博客</title>
     <link href="https://janwang01.github.io/2017/09/04/github-hexo%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E4%B8%AA%E6%80%A7%E5%8D%9A%E5%AE%A2/"/>
     <id>https://janwang01.github.io/2017/09/04/github-hexo免费搭建个性博客/</id>
     <published>2017-09-04T15:06:37.000Z</published>
-    <updated>2019-12-24T06:57:18.057Z</updated>
+    <updated>2020-07-09T07:03:25.088Z</updated>
     
     <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>在做任何事情的时候都要知道自己想要的是什么？目的是什么？ 目的是什么？目的是什么？目的是什么？<br> <b>Jan</b></p></blockquote><p>很久之前就想着搭建博客来记录下平时开发遇到的问题及解决方案，防止以后忘记。在现在这个开源环境下，相互交流，一举两得。当时是想用Jekyll+github搭建博客，翻了几篇教程，看了很多博客，发现搭建过程麻烦，主要是没什么好看的模板，需要费时间去找。所以搭建博客这件事就拖了非常久，直到在某一天看到hexo+nexT搭建的博客，被惊艳到了，风格简洁大气上档次。这特么不就是我苦苦追寻的博客么…<br><a id="more"></a></p><h3 id="准备条件-未完待续"><a href="#准备条件-未完待续" class="headerlink" title="准备条件 (未完待续)"></a>准备条件 (未完待续)</h3><h4 id="安装Node"><a href="#安装Node" class="headerlink" title="安装Node"></a>安装Node</h4><h4 id="申请GitHub账号"><a href="#申请GitHub账号" class="headerlink" title="申请GitHub账号"></a>申请GitHub账号</h4><h4 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h4>]]></content>
     
@@ -51,7 +76,7 @@
     <link href="https://janwang01.github.io/2017/08/16/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E4%BB%A3%E7%A0%81/"/>
     <id>https://janwang01.github.io/2017/08/16/记录一些常用的代码/</id>
     <published>2017-08-15T16:57:35.000Z</published>
-    <updated>2019-12-24T06:57:18.057Z</updated>
+    <updated>2020-07-09T07:03:25.088Z</updated>
     
     <content type="html"><![CDATA[<p>很多时候对一些比较常用，但是又不是经常用的并且又很长的代码，习惯性想不起来，每次都要问度娘，表示特别麻烦，而已不是第一页第一条就有自己要的代码，经常要翻好几个链接才能找到答案。既浪费时间，又容易打断码代码的思路。故此特下此博客记录下一些常用代码。<br><a id="more"></a></p><h1 id="常用css"><a href="#常用css" class="headerlink" title="常用css"></a>常用css</h1><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 快速滚动和回弹的效果(仅支持IOS)</span><br><span class="line"><span class="selector-class">.mask</span> &#123;</span><br><span class="line">  <span class="attribute">-webkit-overflow-scrolling </span>: touch; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="常用js"><a href="#常用js" class="headerlink" title="常用js"></a>常用js</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 跳转页面（有些华为手机链接没变化是不会跳转当前页面的，必须要加个时间戳或其他参数）</span></span><br><span class="line"><span class="built_in">window</span>.location.href=<span class="string">""</span>; </span><br><span class="line"><span class="comment">// 返回上一页</span></span><br><span class="line"><span class="built_in">window</span>.history.back(<span class="number">-1</span>); </span><br><span class="line"><span class="comment">// 刷新当前页面</span></span><br><span class="line">location.reload();</span><br></pre></td></tr></table></figure><h1 id="常用php"><a href="#常用php" class="headerlink" title="常用php"></a>常用php</h1><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$act_id = intval(Request::input(<span class="string">'act_id'</span>));</span><br><span class="line">Session::put(<span class="string">'jssdk'</span>,$jssdk);</span><br></pre></td></tr></table></figure><h1 id="常用sql"><a href="#常用sql" class="headerlink" title="常用sql"></a>常用sql</h1><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> zixun_order.mem_name,zixun_order.mem_tel,zixun_ticket.price,zixun_ticket.ticktype_name,zixun_ticket.act_name,zixun_ticket.created_at,zixun_ticket.pay_status <span class="keyword">FROM</span> zixun_ticket <span class="keyword">LEFT</span> <span class="keyword">JOIN</span> zixun_order <span class="keyword">ON</span> zixun_ticket.mem_id = zixun_order.mem_id <span class="keyword">WHERE</span> zixun_ticket.act_id = <span class="number">4</span> <span class="keyword">AND</span> zixun_ticket.pay_status = <span class="number">1</span>;</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -87,7 +112,7 @@
     <link href="https://janwang01.github.io/2017/08/16/%E9%82%A3%E4%BA%9B%E5%B9%B4npm%E5%AE%89%E8%A3%85%E5%8C%85%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/"/>
     <id>https://janwang01.github.io/2017/08/16/那些年npm安装包遇到的坑/</id>
     <published>2017-08-15T16:11:43.000Z</published>
-    <updated>2019-12-24T06:57:18.057Z</updated>
+    <updated>2020-07-09T07:03:25.088Z</updated>
     
     <content type="html"><![CDATA[<h1 id="nodejs安装与配置"><a href="#nodejs安装与配置" class="headerlink" title="nodejs安装与配置"></a>nodejs安装与配置</h1><p>全程参照网上教程，<a href="http://www.jianshu.com/p/03a76b2e7e00" target="_blank" rel="noopener">传送门</a>！这篇教程是把nodejs安装在D盘，当时我并没有多想为什么要装在D盘。因为我电脑是固态硬盘并没有分区只有一个盘，所以我就干脆把它装在了<strong>C:\Program Files (x86)</strong>。到后面npm install 的时候出错了，权限不够。所以每次都要以管理员权限运行，比较麻烦。如果装在D盘的话，就可以直接运行了。我当时也觉得不麻烦，但是后来用Git bash here来安装hexo的时候并不是以管理员权限运行，所以一直安装不了，又不能使用管理员权限运行。后面又重新安装在了D盘才解决问题。<br><a id="more"></a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Jan@MiWiFi-R1CL MINGW64 /c/JanBlog</span><br><span class="line">$ npm install hexo -g</span><br></pre></td></tr></table></figure></p><p>虽然解决了这个小坑，但是又有个大坑等着我了。npm安装依赖超慢，装了一个下午都没装的hexo。上网百度了一下，大家都说用淘宝镜像源cnpm速度非常快。但是的话有时候会有莫名其妙的问题出现，所以当时没有马上用cnmp来安装，又继续寻找，可是都没有其他的好办法。当时还以为是npm版本太高，不稳定，然后立马又换了个稳定版的，并没有什么卵用。难道是vpn不给力，于是乎又换了个vpn，然而还是没什么卵用。折腾了一天，都没弄完。无奈之下，使用了<a href="https://npm.taobao.org/" target="_blank" rel="noopener">cnpm</a>，速度贼快！</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure><h1 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h1><p>两个不同的电脑上传hexo博客到github老是报错，找了很久终于发现<a href="http://blog.csdn.net/gdutxiaoxu/article/details/53573399" target="_blank" rel="noopener">解决方案</a>。</p><p><strong>注意：</strong>git每次根据邮箱自动生成的密钥都是不一样的，所以每次都要上传的github账号上面才能实现，hexo g 直接提交到版本库。</p><h1 id="新版npm使用方式，速度更快，更稳定"><a href="#新版npm使用方式，速度更快，更稳定" class="headerlink" title="新版npm使用方式，速度更快，更稳定"></a>新版npm使用方式，速度更快，更稳定</h1><p><a href="https://www.zhihu.com/question/53341824" target="_blank" rel="noopener">通过cnpm下载的包为什么那么凌乱</a></p><p><a href="http://blog.csdn.net/rongbo_j/article/details/52106580" target="_blank" rel="noopener">使用阿里巴巴国内镜像但不使用cnpm</a></p><blockquote><p>cnpm 在安装包时使用的是 cnpm/npminstall 。项目的 readme 已经写明了细节，仔细阅读即可。简单来说，npminstall 下的 node_modules 目录采用和 npm 官方 client 不一样的布局，主要是为了最大限度提高安装速度。</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ npm install &lt;registry-name&gt; --registry https://registry.npmjs.org</span><br><span class="line">$ npm config <span class="built_in">set</span> registry https://registry.npmjs.org  </span><br><span class="line">$ npm config list <span class="comment">#查看更新后的config设置</span></span><br></pre></td></tr></table></figure>]]></content>
     
