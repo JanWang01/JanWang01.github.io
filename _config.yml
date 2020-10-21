@@ -3,16 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: JanWang个人博客
-subtitle: JanWang个人博客
-description: JanWang个人博客
+title: JanWang
+subtitle: JanWang
+description: 记录成长的点点滴滴
 author: Jan Wang
 language: zh-Hans
 timezone: PRC
+recordno: 桂ICP备2020007464号
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://janwang01.github.io
+url: http://zool.wang
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -79,5 +80,5 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/JanWang01/JanWang01.github.io.git
-  branch: master
+  repository: https://codeup.teambition.com/5e3bb6978aa97e000166c525/myblog.git
+  branch: hexo
